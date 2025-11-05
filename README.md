@@ -38,6 +38,22 @@ This project implements a hybrid Variational Autoencoder (**LTVAE**) for molecul
 - **`environment.yml`**  
   Conda environment with Python, PyTorch, RDKit, and dependencies to reproduce results.
 
+### Notebooks
+
+> ⚠️ **Note:** Before running any of the notebooks, ensure that the directories for **data** and **saved model checkpoints** are correctly updated in the corresponding notebook cells.
+
+- **`main.ipynb`**  
+  The central notebook used to train the **LTVAE model**. It orchestrates the complete workflow, utilizing helper scripts for data handling, training, and visualization. The training process includes **KL annealing**, **teacher forcing**, and **beam-search decoding**. Performance metrics such as reconstruction accuracy, validity ratio, and Levenshtein distance are plotted against epochs.
+
+- **`test.ipynb`**  
+  Used to evaluate the trained model’s performance on both the **ZINC15 test set** and the **dye SMILES test set**. The notebook computes **token-level** and **string-level reconstruction accuracies**, **chemical validity**, and **average Levenshtein distance**. Results highlight how the model generalizes across structurally distinct molecular domains.
+
+- **`test_2.ipynb`**  
+  This notebook further tests the model on a completely **distinct test set**—different from the training and validation data. It generates **novel valid dye molecules**, which were later showcased in the manuscript to demonstrate the model’s **generative capability** and **chemical plausibility**.
+
+- **`property_prediction.ipynb`**  
+  Focused on analyzing the **latent chemical space**. It trains a **nonlinear MLP property head** to predict molecular properties (MW, LogP, QED, Fsp³, etc.) from latent vectors. The notebook also visualizes molecules filtered from `unison.csv` in latent space and compares property correlations through **MAE**, **R²**, and **correlation heatmaps**.
+
 ---
 
 ## How to Run
