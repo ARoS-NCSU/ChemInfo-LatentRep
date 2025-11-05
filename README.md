@@ -49,7 +49,7 @@ This project implements a hybrid Variational Autoencoder (**LTVAE**) for molecul
 
 2. **Prepare data**  
 Put your training, validation, and test CSV files under `Data/`.  
-Each file should have a column named `smiles`.
+Each file should have a column named `smiles`. Training, validation and test data can be downloaded from [here](https://drive.google.com/drive/folders/1DPeCl15xXv-mPysPgoZz5EAOHKTJ6_kI?usp=sharing)
 
 3. **Update config**  
 Edit `cfg` in `main.ipynb` notebook.
@@ -75,5 +75,5 @@ Train the model by running:
 -	Vocabulary is cached in vocab.json for consistency.
 -	All configs (cfg) are centralized so experiments can be rerun easily with different hyperparameters.
 
-### Data
-Data can be accessed from [here](https://drive.google.com/drive/folders/1DPeCl15xXv-mPysPgoZz5EAOHKTJ6_kI?usp=sharing)
+### Funding
+This work was supported by National Science Foundation (Award \# 2344423)
