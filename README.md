@@ -60,15 +60,6 @@ This project implements a hybrid Variational Autoencoder (**LTVAE**) for molecul
   - `dye.csv`
   - `union_586k.csv`
 
-- **`checkpoints/`**  
-  Contains saved model artifacts:
-  - `best_model.pth`
-  - `property_head_best.pt`
-  - `training_curves.png`
-
-- **`outputs/`**  
-  Contains reconstruction outputs, dye-domain analysis tables, property histograms, distance/statistical summaries, and figure images generated from model evaluation and analysis.
-
 ### Notebooks
 
 > **Note:** Before running any notebook, update local paths for data files, saved checkpoints, and output directories where needed.
