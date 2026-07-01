@@ -55,7 +55,7 @@ This project implements a hybrid Variational Autoencoder (**LTVAE**) for molecul
   Contains CSV files used for training, validation, and testing:
   - `Train_1.csv`, `Train_2.csv`, `Train_3.csv`
   - `Valid_1.csv`
-  - `Test.csv`
+  - `Test_zinc15.csv`
   - `Test_pubchem.csv`
   - `dye.csv`
   - `union_586k.csv`
